@@ -20,7 +20,7 @@ public class ValidadorController {
 	}
 
 	@GetMapping("/")
-	public String index(@RequestParam String cpf) {
+	public String index() {
 		if (Validador.isCPF(cpf)) {
 			return "{\"status\": \"valido\"}";
 		}
